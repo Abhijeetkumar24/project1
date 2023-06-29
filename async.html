@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function delay(ms) {
+          return new Promise(resolve => setTimeout(resolve, ms));
+        }
+        
+        async function asyncExample() {
+          console.log("Before delay");
+          await delay(2000); // Asynchronous delay of 2 seconds
+          console.log("After delay");
+        }
+        
+        console.log("Start");
+        asyncExample();
+        console.log("End");
+
+    </script>
+</body>
+</html>
